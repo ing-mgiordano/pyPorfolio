@@ -1,0 +1,28 @@
+{
+  "name": "porfolio",
+  "version": "1.0.0",
+  "description": "pyPorfolio 2022",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ing-mgiordano/pyPorfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "webdeveloper",
+    "miguel",
+    "giordano"
+  ],
+  "author": "Miguel Giordano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ing-mgiordano/pyPorfolio/issues"
+  },
+  "homepage": "https://github.com/ing-mgiordano/pyPorfolio#readme",
+  "dependencies": {
+    "eins-modal": "^2.2.2"
+  }
+}

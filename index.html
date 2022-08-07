@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@400;700;900&family=Roboto:wght@300;400;500;700&family=Signika:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/eins-modal/dist/css/eins-modal.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -43,12 +44,12 @@
         <div class="briefcase-section container">
             <h2><span>Briefcase |</span> Portafolio</h2>
             <div class="briefcase-grid">
-                <div><img src="./img/pyCotizaCripto.png" alt="Cotizador Cripto"></div>
-                <div><img src="./img/pyControlGastos.png" alt="Control Gastos"></div>
-                <div><img src="./img/pyGestionVet.png" alt="Gestion Vet"></div>
-                <div><img src="./img/pyFindCocktail.png" alt="Buscar Cockteil"></div>
-                <div><img src="./img/pyFindSongs.png" alt="Buscar Cancion"></div>
-                <div><img src="./img/pyCotizadorSeguros.png" alt="Cotizador Seguros"></div>
+                <div><a data-modal-id="py-cotizador"><img src="./img/pyCotizaCripto.png" alt="Cotizador Cripto"></a></div>
+                <div><a data-modal-id="py-control-gastos"><img src="./img/pyControlGastos.png" alt="Control Gastos"></a></div>
+                <div><a data-modal-id="py-gestion-vet"><img src="./img/pyGestionVet.png" alt="Gestion Vet"></a></div>
+                <div><a data-modal-id="py-cocktail"><img src="./img/pyFindCocktail.png" alt="Buscar Cockteil"></a></div>
+                <div><a data-modal-id="py-songs"><img src="./img/pyFindSongs.png" alt="Buscar Cancion"></a></div>
+                <div><a data-modal-id="py-cotizador-seguros"><img src="./img/pyCotizadorSeguros.png" alt="Cotizador Seguros"></a></div>
             </div>
         </div>
     </section>
@@ -130,8 +131,8 @@
                     principalmente ultilizando React y otras tecnologías.
                 </p>
                 <p><br>Me considero una persona autodidacta, ya que he comenzado a estudiar
-                    por mi propia cuenta en sitios como Udemy, aunque tambien he realizado cursos en <a href="https://www.barcelonactiva.cat">Barcelona Activa</a>.
-                    Hoy en dia estoy dentro de uno de los mejor campus de programación <a href="https://www.fundaciontelefonica.com">42Málaga</a>
+                    por mi propia cuenta en sitios como Udemy, aunque tambien he realizado cursos en <a target="_blank" href="https://www.barcelonactiva.cat">Barcelona Activa</a>.
+                    Hoy en dia estoy dentro de uno de los mejor campus de programación <a target="_blank" href="https://www.fundaciontelefonica.com">42Málaga</a>
                 </p>
             </div>
             <div class="social">
@@ -140,10 +141,199 @@
                 <a href="#"><img src="./img/message.svg" alt="message icon"></a>
             </div>
         </div>
+        <div class="icon-elements">
+            <a href="https://github.com/ing-mgiordano/pyPorfolio" target="_blank">
+                <img src="./img/github-icon.png" alt="github icon">
+                <span>/ Ver código de este proyecto desde el repositorio.</span>
+            </a>
+        </div>
     </section>
 
     <footer>
         <p>ⓒ 2022 Copyright | Designed by MGIORDANO</p>
     </footer>
+
+    <div id="py-cotizador" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="py-content">
+                <div class="eins-modal-preview">
+                    <img src="./img/pyCotizaCripto.png" alt="py cotizador cripto">
+                </div>
+                <div class="eins-modal-text">
+                    <p>Página donde puedes visualizar el valor de las 20 criptomonedas 
+                    con mejor cotización del momento, en diferentes divisas.
+                    <br>El proyecto fue construido utilizando HTML, CSS, JS, REACT y Vite.</p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span><a target="_blank" href="https://cotiza-tu-cripto.netlify.app">cotiza-tu-cripto.netlify.app</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="./img/html-icon.png" alt="html icon">
+                            <img src="./img/css-icon.png" alt="css icon">
+                            <img src="./img/js-icon.png" alt="js icon">
+                            <img src="./img/react-icon.png" alt="react icon">
+                            <img src="./img/vite-icon.png" alt="vite icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="py-control-gastos" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="py-content">
+                <div class="eins-modal-preview">
+                    <img src="./img/pyControlGastos.png" alt="py control gastos">
+                </div>
+                <div class="eins-modal-text">
+                    <p>En este proyecto podemos visualizar y controlar los gastos realizados, definiendo un presupuesto inicial.
+                    Podemos filtrar los gastos por categoria, editarlos si cometimos un error al ingresarlo y/o eliminar un gasto.
+                    <br>El proyecto fue construido utilizando HTML, CSS, JS, REACT y Vite.
+                    </p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span><a target="_blank" href="https://controlatuplata.netlify.app/">controlatuplata.netlify.app</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="./img/html-icon.png" alt="html icon">
+                            <img src="./img/css-icon.png" alt="css icon">
+                            <img src="./img/js-icon.png" alt="js icon">
+                            <img src="./img/react-icon.png" alt="react icon">
+                            <img src="./img/vite-icon.png" alt="vite icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="py-gestion-vet" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="py-content">
+                <div class="eins-modal-preview">
+                    <img src="./img/pyGestionVet.png" alt="py gestion vet">
+                </div>
+                <div class="eins-modal-text">
+                    <p>Este proyecto tiene como objetivo gestionar pacientes para una veterinaria,
+                    mostrando datos sobre las mascotas, sus sintomas y fecha estimada de alta.
+                    <br>El proyecto fue construido utilizando HTML, TailwindCSS, JS, REACT y Vite.
+                    </p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span><a target="_blank" href="https://appvet.netlify.app">appvet.netlify.app</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="./img/html-icon.png" alt="html icon">
+                            <img src="./img/js-icon.png" alt="js icon">
+                            <img src="./img/react-icon.png" alt="react icon">
+                            <img src="./img/vite-icon.png" alt="vite icon">
+                            <img src="./img/tailwind-icon.png" alt="tailwincss icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="py-cocktail" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="py-content">
+                <div class="eins-modal-preview">
+                    <img src="./img/pyFindCocktail.png" alt="py find cocktail">
+                </div>
+                <div class="eins-modal-text">
+                    <p>En este proyecto podemos buscar recetas de Cocktails buscando el tipo de bebida a utilizar y su categoria.
+                    Podemos visualizar los ingredietnes necesarios y como hacer la bebida.
+                    <br>El proyecto fue construido utilizando HTML, Bootstrap5, JS, REACT, Vite y componentes NPM.
+                    </p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span><a target="_blank" href="https://findyourcocktails.netlify.app">findyourcocktails.netlify.app</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="./img/html-icon.png" alt="html icon">
+                            <img src="./img/js-icon.png" alt="js icon">
+                            <img src="./img/bootstrap-icon.png" alt="bootstrap-icon icon">
+                            <img src="./img/react-icon.png" alt="react icon">
+                            <img src="./img/vite-icon.png" alt="vite icon">
+                            <img src="./img/npm-icon.png" alt="npm icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="py-songs" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="py-content">
+                <div class="eins-modal-preview">
+                    <img src="./img/pyFindSongs.png" alt="py find song">
+                </div>
+                <div class="eins-modal-text">
+                    <p>Un simple proyecto, en donde podemos buscar letras de canciones por nombre de artista y/o nombre de cancíon.
+                    <br>El proyecto fue construido utilizando HTML, CSS, JS, REACT, Vite y componentes NPM.
+                    </p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span><a target="_blank" href="https://tuscanciones.netlify.app">tuscanciones.netlify.app</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="./img/html-icon.png" alt="html icon">
+                            <img src="./img/js-icon.png" alt="js icon">
+                            <img src="./img/css-icon.png" alt="css icon">
+                            <img src="./img/react-icon.png" alt="react icon">
+                            <img src="./img/vite-icon.png" alt="vite icon">
+                            <img src="./img/npm-icon.png" alt="npm icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="py-cotizador-seguros" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <div class="py-content">
+                <div class="eins-modal-preview">
+                    <img src="./img/pyCotizadorSeguros.png" alt="py cotizador seguros">
+                </div>
+                <div class="eins-modal-text">
+                    <p>Un simple cotizador de seguros de autos, donde podemos elegir por marca y año del automovil y 
+                    seleccionar el tipo de plan que queremos. Apartir de esto nos muestra el presupuesto del seguro.
+                    <br>El proyecto fue construido utilizando HTML, CSS, JS, REACT, Vite y componentes NPM.
+                    </p>
+                    <div class="eins-modal-text-2">
+                        <span>ENLACE:</span><a target="_blank" href="https://asegura-tu-carro.netlify.app">asegura-tu-carro.netlify.app</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologías Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="./img/html-icon.png" alt="html icon">
+                            <img src="./img/js-icon.png" alt="js icon">
+                            <img src="./img/tailwind-icon.png" alt="tailwincss icon">
+                            <img src="./img/react-icon.png" alt="react icon">
+                            <img src="./img/vite-icon.png" alt="vite icon">
+                            <img src="./img/npm-icon.png" alt="npm icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 </body>
 </html> 
