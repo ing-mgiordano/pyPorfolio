@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Porfolio Miguel Giordano</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@400;700;900&family=Roboto:wght@300;400;500;700&family=Signika:wght@500&display=swap" rel="stylesheet">
@@ -12,15 +12,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <div class="hero">
-            <div class="navbar">
+        <div class="navbar">
+            <nav>
                 <ul>
-                    <li><a href="@">Inicio</a></li>
-                    <li><a href="@">Portafolio</a></li>
-                    <li><a href="@">Sobre mi</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#briefcase">Portafolio</a></li>
+                    <li><a href="#about-me">Sobre mi</a></li>
                 </ul>
-            </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <section>
+        <div class="hero" id="inicio">
             <img src="./img/fondo-desktop.jpg" alt="Imagen de fondo">
         </div>
 
@@ -32,13 +39,13 @@
             <div class="square-text">MIGUEL GIORDANO</div>
             <div class="square-text-2"><span>ING. DE PROCESOS | WEB DEVELOPER</span></div>
             <div class="contact-icon">
-                <a href="https://github.com/ing-mgiordano"><img src="./img/github.svg" alt="github icon"></a>
-                <a href="https://www.linkedin.com/in/ingmgiordano/"><img src="./img/linkedin.svg" alt="likendin icon"></a>
-                <a href="#"><img src="./img/message.svg" alt="message icon"></a>
+                <a href="https://github.com/ing-mgiordano" target="_blank"><img src="./img/github.svg" alt="github icon"></a>
+                <a href="https://www.linkedin.com/in/ingmgiordano/" target="_blank"><img src="./img/linkedin.svg" alt="likendin icon"></a>
+                <a data-modal-id="message"><img src="./img/message.svg" alt="message icon" target="_blank"></a>
             </div>
             <div class="square-text-3"><a href="#about-me"><span>About me |</span> Sobre mi</a></div>
         </div>
-    </header>
+    </section>
 
     <section class="briefcase" id="briefcase">
         <div class="briefcase-section container">
@@ -117,7 +124,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about-me">
         <div class="about-flex container">
             <div class="about-info">
                 <p>Mi nombre es Miguel Giordano, soy Ingeniero de Procesos egresado
@@ -136,9 +143,9 @@
                 </p>
             </div>
             <div class="social">
-                <a href="https://github.com/ing-mgiordano"><img src="./img/github.svg" alt="github icon"></a>
-                <a href="https://www.linkedin.com/in/ingmgiordano/"><img src="./img/linkedin.svg" alt="likendin icon"></a>
-                <a href="#"><img src="./img/message.svg" alt="message icon"></a>
+                <a href="https://github.com/ing-mgiordano" target="_blank"><img src="./img/github.svg" alt="github icon"></a>
+                <a href="https://www.linkedin.com/in/ingmgiordano/" target="_blank"><img src="./img/linkedin.svg" alt="likendin icon"></a>
+                <a data-modal-id="message" target="_blank"><img src="./img/message.svg" alt="message icon"></a>
             </div>
         </div>
         <div class="icon-elements">
@@ -334,6 +341,21 @@
         </div>
     </div>
 
+    <div id="message" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            <form class="form" action="https://formspree.io/f/xpznavdo" method="POST">
+                <label>Tu Email:
+                    <input type="email" name="email">
+                </label>
+
+                <label>Tu Mensaje:
+                    <textarea name="message"></textarea>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
     <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>
 </body>
 </html> 

@@ -12,6 +12,14 @@
     --dark2: #050505;
 }
 
+header {
+    background-color: var(--dark2);
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    padding: 5px 0;
+}
+
 body {
     font-size: 18px;
     font-family: 'Signika', sans-serif;
@@ -26,6 +34,9 @@ body {
 .navbar {
     display: flex;
     justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 40;
 }
 
 .navbar ul {
@@ -254,6 +265,10 @@ section.skills {
     padding: 50px 0 100px;
 }
 
+.about-info {
+    text-align: justify;
+}
+
 .about p {
     font-size: 1.5rem;
     width: 90%;
@@ -321,7 +336,8 @@ footer {
 }
 
 .eins-modal-preview {
-    width: 350px;
+    max-width: 350px;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -332,7 +348,11 @@ footer {
 
 .py-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+}
+
+.eins-modal-text {
+    text-align: justify;
 }
 
 .eins-modal-text p {
@@ -340,7 +360,8 @@ footer {
 }
 
 .eins-modal-text-2 {
-    padding: 80px 0 10px;
+    padding: 40px 0 10px;
+    text-align: justify;
 }
 
 .eins-modal-text-2 a {
@@ -348,7 +369,53 @@ footer {
     margin: 5px;
 }
 
+.eins-modal-tec {
+    padding-top: 5px;
+}
+
 .eins-modal-tec img {
     width: 50px;
     height: 50px;
+}
+
+/* contact form */
+
+form {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.form>label>input {
+    margin-top: 5px;
+    background-color: var(--dark2);
+    border-radius: 10px;
+    padding: 10px 60px;
+    color: var(--secondary);
+    outline: none;
+    opacity: .7;
+    width: 100%;
+}
+
+.form>label>textarea {
+    margin-top: 5px;
+    background-color: var(--dark2);
+    border-radius: 10px;
+    padding: 50px;
+    color: var(--secondary);
+    outline: none;
+    opacity: .7;
+    width: 100%;
+}
+
+label {
+    padding: 8px;
+}
+
+.form>button {
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 10px;
+    padding: 10px;
 }
