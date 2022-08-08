@@ -34,9 +34,6 @@ body {
 .navbar {
     display: flex;
     justify-content: flex-end;
-    position: sticky;
-    top: 0;
-    z-index: 40;
 }
 
 .navbar ul {
@@ -48,8 +45,8 @@ body {
     font-size: 1.5rem;
     padding: 10px;
     text-decoration: none;
-    color: white;
-    margin: 20px;
+    color: var(--secondary);
+    margin: 10px;
 }
 
 .navbar a:hover {
@@ -188,6 +185,7 @@ span {
     width: 100%;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .briefcase-grid img:hover {
@@ -211,8 +209,8 @@ section.skills {
 }
 
 .skill h2 {
-    padding-top: 30px;
-    padding-bottom: 60px;
+    padding: 30px 30px 90px 30px;
+    font-size: 2.2rem;
 }
 
 .skill h3 {
@@ -294,10 +292,13 @@ section.skills {
 /* icon elements */
 
 .icon-elements {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
     justify-content: center;
     gap: 20px;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .icon-elements a {
@@ -369,6 +370,18 @@ footer {
     margin: 5px;
 }
 
+.eins-modal-text-3 img:hover{
+    transform: scale(1.1);
+
+}
+.eins-modal-text-3 span:hover{
+    color: var(--secondary);
+}
+.eins-modal-text-3 a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
 .eins-modal-tec {
     padding-top: 5px;
 }
@@ -411,6 +424,7 @@ form {
 
 label {
     padding: 8px;
+    color: var(--primary);
 }
 
 .form>button {
