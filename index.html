@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:wght@400;700;900&family=Roboto:wght@300;400;500;700&family=Signika:wght@500&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
+    <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
 
@@ -18,11 +20,11 @@
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#briefcase">Portafolio</a></li>
                     <li><a href="#about-me">Sobre mi</a></li>
+                    <li><a href="#inicio"><img src="./img/bandera.png" alt="bandera traductor"></a></li>
                 </ul>
             </nav>
         </div>
     </header>
-
 
     <section>
         <div class="hero" id="inicio">
@@ -35,10 +37,13 @@
             <div class="circle"></div>
             <div class="profile-img"><img src="./img/20161123_203536.jpg" alt="foto perfil"></div>
             <div class="square-text">MIGUEL GIORDANO</div>
-            <div class="square-text-2"><span>ING. DE PROCESOS | WEB DEVELOPER</span></div>
+            <div class="square-text-2"><span>ING. DE PROCESOS | WEB DEVELOPER</span>
+            </div>
             <div class="contact-icon">
                 <a href="https://github.com/ing-mgiordano" target="_blank"><img src="./img/github.svg" alt="github icon"></a>
                 <a href="https://www.linkedin.com/in/ingmgiordano/" target="_blank"><img src="./img/linkedin.svg" alt="likendin icon"></a>
+                <a href="tel:+34678733257" target="_blank"><img src="./img/cel.png" alt="cel icon"></a>
+                <a href="https://wa.me/34678733257" target="_blank"><img src="./img/wapp.png" alt="whatsapp icon"></a>
                 <a data-modal-id="message"><img src="./img/message.svg" alt="message icon" target="_blank"></a>
             </div>
             <div class="square-text-3"><a href="#about-me"><span>About me |</span> Sobre mi</a></div>
@@ -124,28 +129,33 @@
 
     <section class="about" id="about-me">
         <div class="about-flex container">
-            <div class="about-info">
-                <p>Mi nombre es Miguel Giordano, soy Ingeniero de Procesos egresado
-                    de la Universidad Tecnológica Nacional, Argentina.
+            <div>
+                <p class="about-info">Mi nombre es Miguel Giordano, soy Ingeniero de Procesos egresado
+                    de la <a href="https://www.frc.utn.edu.ar/" target="_blank"><span>Universidad Tecnológica Nacional</span></a>, Argentina.
                     Después de varios años en la industria de consumo en fábricas industriales y
                     con el objetivo de adaptarme a las nuevas tecnologías y necesidades del mercado,
-                    comencé a estudiar diferentes lenguajes de programación (C, Java, JavaScript) y
-                    así poder incorporarme en el campo de IT.
+                    comencé a estudiar diferentes lenguajes de programación (C, Java, JavaScript) para incorporarme en el rubro IT.
                     En el último tiempo me he especializado en Frontend Developer enfocado a desarrollo web,
-                    utilizando tecnologías como React, Node, NPM, Express, entre otras, con las cuales he realizado
-                    diferentes proyectos web. Algunos de ellos se pueden ver en el <a href="#briefcase">Portafolio</a> y en
-                    mi <a href="https://github.com/ing-mgiordano" target="_blank">GitHub</a> personal.
+                    utilizando tecnologías como React, Next, NPM, Express, entre otras, con las cuales he realizado
+                    diferentes proyectos web. Algunos de ellos se pueden ver en el <a href="#briefcase"><span>Portafolio</span></a> y en
+                    mi <a href="https://github.com/ing-mgiordano" target="_blank"><span>GitHub</span></a> personal.
                 </p>
-                <p><br>Me considero una persona autodidacta, ya que he comenzado a estudiar
-                    por mi propia cuenta en sitios como <a target="_blank" href="https://www.udemy.com/user/miguel-giordano-2/">Udemy</a>, 
-                    aunque también he realizado cursos de JavaScript en <a target="_blank" href="https://www.barcelonactiva.cat">Barcelona Activa</a>.
-                    <br>Actualmente, estoy dentro de uno de los mejores campus de programación pertenecientes a Fundación Telefónica,  
-                    <a target="_blank" href="https://www.fundaciontelefonica.com">42Málaga</a>.
+                <p class="about-info"><br>Soy una persona autodidacta. He comenzado a estudiar
+                    por mi propia cuenta en sitios como <a target="_blank" href="https://www.udemy.com/user/miguel-giordano-2/"><span>Udemy</span></a>, 
+                    aunque también he realizado cursos de JavaScript en <a target="_blank" href="https://www.barcelonactiva.cat"><span>Barcelona Activa</span></a>.
+                    Actualmente, estoy dentro de uno de los mejores campus de programación pertenecientes a Fundación Telefónica,  
+                    <a target="_blank" href="https://www.fundaciontelefonica.com"><span>42 Málaga</span></a> donde, el avance del curso, depende de la 
+                    metodología entre pares o Peer-to-Peer, haciendo del trabajo en equipo algo primordial para realizar los proyectos.
+                </p>
+                <p><br>Mi objetivo es insertarme en el campo laboral para aplicar todos los conocimientos adquiridos, involucrándome en
+                    proyectos que me permitan crecer personal y profesionalmente. 
                 </p>
             </div>
             <div class="social">
                 <a href="https://github.com/ing-mgiordano" target="_blank"><img src="./img/github.svg" alt="github icon"></a>
                 <a href="https://www.linkedin.com/in/ingmgiordano/" target="_blank"><img src="./img/linkedin.svg" alt="likendin icon"></a>
+                <a href="tel:+34678733257" target="_blank"><img src="./img/cel.png" alt="cel icon"></a>
+                <a href="https://wa.me/34678733257" target="_blank"><img src="./img/wapp.png" alt="whatsapp icon"></a>
                 <a data-modal-id="message" target="_blank"><img src="./img/message.svg" alt="message icon"></a>
             </div>
         </div>
@@ -196,7 +206,7 @@
                 </div>
                 <div class="eins-modal-text">
                     <p>En este proyecto podemos visualizar y controlar los gastos realizados, definiendo un presupuesto inicial.
-                    Podemos filtrar los gastos por categoria, editarlos si cometimos un error al ingresarlo y/o eliminar un gasto.
+                    Podemos filtrar los gastos por categorías, editarlos si cometimos un error al ingresarlo y/o eliminar un gasto.
                     <br>El proyecto fue construido utilizando HTML, CSS, JS, REACT y Vite.
                     </p>
                     <div class="eins-modal-text-2">
@@ -226,7 +236,7 @@
                 </div>
                 <div class="eins-modal-text">
                     <p>Este proyecto tiene como objetivo gestionar pacientes para una veterinaria,
-                    mostrando datos sobre las mascotas, sus sintomas y fecha estimada de alta.
+                    mostrando datos sobre las mascotas, sus síntomas y fecha estimada de alta.
                     <br>El proyecto fue construido utilizando HTML, TailwindCSS, JS, REACT y Vite.
                     </p>
                     <div class="eins-modal-text-2">
@@ -255,8 +265,8 @@
                     <img src="./img/pyFindCocktail.png" alt="py find cocktail">
                 </div>
                 <div class="eins-modal-text">
-                    <p>En este proyecto podemos buscar recetas de Cocktails buscando el tipo de bebida a utilizar y su categoria.
-                    Podemos visualizar los ingredietnes necesarios y como hacer la bebida.
+                    <p>En este proyecto podemos buscar recetas de Cocktails buscando el tipo de bebida a utilizar y su categoría.
+                    Podemos visualizar los ingredientes necesarios y como hacer la bebida.
                     <br>El proyecto fue construido utilizando HTML, Bootstrap5, JS, REACT, Vite y componentes NPM.
                     </p>
                     <div class="eins-modal-text-2">
@@ -286,7 +296,7 @@
                     <img src="./img/pyFindSongs.png" alt="py find song">
                 </div>
                 <div class="eins-modal-text">
-                    <p>Un simple proyecto, en donde podemos buscar letras de canciones por nombre de artista y/o nombre de cancíon.
+                    <p>Un simple proyecto, en donde podemos buscar letras de canciones por nombre de artista y/o nombre de canción.
                     <br>El proyecto fue construido utilizando HTML, CSS, JS, REACT, Vite y componentes NPM.
                     </p>
                     <div class="eins-modal-text-2">
@@ -316,8 +326,8 @@
                     <img src="./img/pyCotizadorSeguros.png" alt="py cotizador seguros">
                 </div>
                 <div class="eins-modal-text">
-                    <p>Un simple cotizador de seguros de autos, donde podemos elegir por marca y año del automovil y 
-                    seleccionar el tipo de plan que queremos. Apartir de esto nos muestra el presupuesto del seguro.
+                    <p>Un simple cotizador de seguros de autos, donde podemos elegir por marca y año del automóvil y 
+                    seleccionar el tipo de plan que queremos. A partir de esto nos muestra el presupuesto del seguro.
                     <br>El proyecto fue construido utilizando HTML, CSS, JS, REACT, Vite y componentes NPM.
                     </p>
                     <div class="eins-modal-text-2">
@@ -343,7 +353,7 @@
         <div class="eins-modal-content">
             <div class="eins-modal-close"></div>
             <form class="form" action="https://formspree.io/f/xpznavdo" method="POST">
-                <label>Tu Email:
+                <label>Tu email:
                     <input type="email" name="email">
                 </label>
 
@@ -358,6 +368,8 @@
     <footer>
         <p>ⓒ 2022 Copyright | Designed by MGIORDANO</p>
     </footer>
+
+    <!-- <script src="node_modules/eins-modal/dist/js/eins-modal.min.js"></script> -->
 
 </body>
 </html> 
