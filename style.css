@@ -108,13 +108,13 @@ body {
 }
 
 .profile-img {
-    top: 125px;
+    top: 135px;
     z-index: 20;
 }
 
 .profile-img img {
-    width: 208px;
-    height: 219px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
 }
 
